@@ -9,12 +9,13 @@ def collatz(num):
 
 User_input = input('Enter Number:')
 User_input = int(User_input)
+New_num = User_input
 
 while True:
-    if collatz(User_input) <=1:
-        print(collatz(User_input))
+    New_num = collatz(New_num)
+    if New_num <=1:
+        print(New_num)
         break
     else:
-        User_input = collatz(User_input)
-        print(User_input)
+       print(New_num)
         
