@@ -12,7 +12,8 @@ def numDivisor(num):
     while divisor < num:
         if num % divisor == 0:
             numList.append(divisor)
-            divisor +=1
+        divisor +=1
+
     return numList
 
 print(numDivisor(userNum))
