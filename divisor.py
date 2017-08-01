@@ -8,14 +8,12 @@ userNum = int(input('please enter a number:'))
 
 def numDivisor(num):
     numList = []
-    for num in numList:
-        if userNum % num == 0:
-            newNum = userNum
-
-            numList.append(num)
-
-
-
+    divisor = 2
+    while divisor < num:
+        if num % divisor == 0:
+            numList.append(divisor)
+            divisor +=1
+    return numList
 
 print(numDivisor(userNum))
 
